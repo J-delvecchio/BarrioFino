@@ -1,0 +1,163 @@
+
+// HEADER
+
+header{
+    a:hover{
+            font-size: 1.2rem;
+            color: #D92E1E;
+        }
+}
+
+.header__logo{
+    border: 2px solid red;
+    border-radius: 0.2em;
+}
+
+.header__navButton{
+    border-radius: 0.2em;
+    background-color: $red;
+    a{
+        font-size: 1.1rem;
+        color: beige;
+        font-weight: 600;
+    }
+
+    a:hover{
+        font-size: 1.6rem;
+        color: #F2E5D5;
+        }
+
+    a:hover{
+    font-size: 1.6rem;
+    color: #F2E5D5;
+    }
+} 
+
+
+
+@media screen and (max-width:480px){
+ 
+    /* HEADER */
+    
+    .header{
+    
+        h1{
+            font-size: 1.6rem;
+        }
+    
+    
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            margin: 0px;
+            padding: 0px;
+            background-color:$cream;   
+            height: auto; 
+        }
+        
+            li{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size:1rem;
+                padding: 0.2rem;
+                
+                img{
+                    width: 6rem;
+                }
+    
+                a{
+                    img{
+                        width: 1.2rem;
+                        padding-bottom: 0.6rem;
+                    }
+                }
+    
+            }
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1199px){
+
+    /* HEADER */
+
+    .header{
+
+        h1{
+            font-size: 2.4rem;
+        }
+    
+    
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            margin: 0px;
+            padding: 0px;
+            background-color:$cream;   
+            height: auto; 
+        }
+        
+            li{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size:1.4rem;
+                padding: 0.3rem;
+                
+                img{
+                    width: 8rem;
+                }
+    
+                a{
+                    img{
+                        width: 1.4rem;
+                        padding-bottom: 0.6rem;
+                    }
+                }
+    
+            }
+    }
+}
+
+@media screen and (min-width:1200px){
+
+
+/* HEADER */
+
+
+.header{
+
+    h1{
+        font-size: 2.3rem;
+    }
+
+    ul{
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center;
+        margin: 0px ;
+        padding: 0px;
+        background-color:$cream;   
+        height: 230px; 
+    }
+        li{
+            text-transform: uppercase;
+            font-weight: 600;
+            a{
+                img{
+                    width: 1.4em;
+                    padding: 0.1em;
+                    padding-top: 2em;
+                }
+            }
+        }
+        
+}
+
+.header__navButton{
+transform: rotate(8deg);
+padding: 1rem;
+}
+}

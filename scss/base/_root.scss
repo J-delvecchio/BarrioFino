@@ -1,0 +1,26 @@
+/*Generales*/
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+
+    li{
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: $cream;
+    background-color: $red;
+    font-weight: 400;
+    text-align: center;
+}

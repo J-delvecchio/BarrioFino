@@ -1,0 +1,372 @@
+// MAIN
+
+main{
+    background-color:$cream;
+}
+
+/*BODY*/
+
+body{
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+/* HOME */
+
+
+.home__imagenes{
+        img{
+            height:25rem;
+        }
+}
+
+// MENU
+@for $i from 1 to 5 {
+    .pizza#{$i}{
+        grid-area: pizza#{$i};
+    }
+}
+
+@for $i from 1 to 5 {
+    .desc#{$i}{
+        grid-area: desc#{$i};
+    }
+}
+
+div.menu__box{
+    article{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        border-top: black 2px solid;
+        padding: 2em;
+        h3{
+            padding: 0.2em;
+            color: $blue;
+            font-weight: 600;
+            font-size: 1.8rem;
+            text-decoration: underline $blue;
+            }
+        p{
+                padding:0.2em;
+                font-weight: 400;
+                padding-top: 1em;
+                }
+        }
+        
+    }
+
+// HAZ TU PEDIDO
+
+.haztupedido__box{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-top: black solid 0.1rem;
+    h2{
+        color: $cream;
+        background-color: $red;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+.haztupedido__infoBox{
+    display: grid;
+    grid-area: resumen;
+    align-self: start;
+    border: black solid 2px;
+    grid-area: resumen;
+    legend{
+        font-weight: 600;
+    }
+}
+
+.haztupedido__mainImgBox{
+    display: grid;
+    justify-items: center;
+    
+    img{
+        width: 100%;
+        height: 35rem;
+    }
+}
+
+/*CONTACTO*/
+
+.contacto__mainBox{
+    display: grid;
+    border-top: black solid 2px;
+    padding: 1.5rem;
+    fieldset{
+        display: grid;
+        background-color:$cream;
+        justify-self: center;
+        align-self: center;
+        padding: 1rem;
+        border: black solid 1px;
+        div{
+            display: grid;
+            font-weight: 400;
+            padding: 1em;
+            justify-self: center;
+        }
+    }
+}
+
+.input_grande{
+    height: 100px;
+}
+
+.contacto__boton{
+    display: grid;
+}
+
+
+@media screen and (max-width:480px){
+    /* MENU */
+
+.menu__box{
+    article{
+        grid-template-columns:0.2fr 1fr 0.2fr ;
+        grid-template-areas: 
+            ". pizza1 ."
+            ". desc1 ."
+            ". pizza2 ."
+            ". desc2 ."
+            ". pizza3 ."
+            ". desc3 ."
+            ". pizza4 ."
+            ". desc4 .";
+
+            img{
+                width:20em;
+                height: 20em;
+                margin-bottom: 1rem;
+                border: $blue solid 0.5rem;
+            }
+    
+            div{
+                width: 20rem;
+                border: solid black 0.2rem;
+                border-radius: 0.3em;
+            }
+            h3{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+
+    }
+}
+
+/*HAZTUPEDIDO*/
+
+.haztupedido__mainImgBox{  
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.haztupedido__box{
+    grid-template-columns:0.2fr 1fr 0.2fr;
+    grid-template-areas: 
+        ". resumen ."
+        ". pizza1 ."
+        ". pizza2 ."
+        ". pizza3 ."
+        ". pizza4 .";
+        article{
+            img{
+                width: 13rem;
+                height: 13rem;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            div{
+                width: 13rem;
+                h3{
+                    font-size: 1.4rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                    margin-bottom: 0.1rem;
+                }
+            }
+        }
+}
+
+
+
+/* INGREDIENTES */
+
+div.ingredientes__box{
+    display: grid;
+    grid-template-rows: 15em 15em 15em;
+    div{
+        img{
+            width: 100%;
+            height: 15em;
+        }
+    }
+}
+
+}
+
+@media screen and (min-width:481px) and (max-width:1199px){
+    /* MENU */
+    
+    .menu__box{
+        article{
+            grid-template-columns:0.2fr 1fr 0.2fr ;
+            grid-template-areas: 
+                ". pizza1 ."
+                ". desc1 ."
+                ". pizza2 ."
+                ". desc2 ."
+                ". pizza3 ."
+                ". desc3 ."
+                ". pizza4 ."
+                ". desc4 .";
+    
+                img{
+                    width:24em;
+                    height: 24em;
+                    margin-bottom: 1rem;
+                    border: $blue solid 0.5rem;
+                }
+        
+                div{
+                    width: 24rem;
+                    border: solid black 0.2rem;
+                    border-radius: 0.3em;
+                }
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+    
+        }
+    }
+
+    /*HAZTUPEDIDO*/
+    
+    .haztupedido__box{
+        grid-template-columns:0.2fr 1fr 1fr 0.2fr;
+        grid-template-areas: 
+            ". resumen resumen ."
+            ". pizza1 pizza2 ."
+            ". pizza3 pizza4 .";
+            article{
+                img{
+                    width: 18rem;
+                    height: 18rem;
+                    margin: 1rem;
+                }
+                div{
+                    width: 18rem;
+                    margin: 1rem;
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                        margin-bottom: 0.1rem;
+                    }
+                }
+            }
+    }
+    
+    /* INGREDIENTES */
+
+    div.ingredientes__box{
+        display: grid;
+        grid-template-rows: 15em 15em 15em;
+        div{
+            img{
+                width: 100%;
+                height: 15em;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    /* HOME */
+.home__imagenes{
+    img{
+        height:35rem;
+    }
+}
+
+/* MENU */
+
+div.menu__box{
+    article{
+        grid-template-columns:0.2fr 1fr 0.7fr 0.2fr ;
+        grid-template-areas: 
+            ". pizza1 desc1 ."
+            ". desc2 pizza2 ."
+            ". pizza3 desc3 ."
+            ". desc4 pizza4 .";
+            img{
+                width:24em;
+                height: 24em;
+                padding: 0.6em;
+            }
+            div{
+                width: 24rem;
+                border: solid black 0.2em;
+                border-radius: 0.5em;
+            }
+        }
+
+}
+
+/*HAZTUPEDIDO*/
+
+.haztupedido__box{
+
+grid-template-columns:0.2fr 1fr 1fr 0.5fr;
+grid-template-areas: 
+    ". pizza1 pizza2 resumen"
+    ". pizza3 pizza4 resumen";
+    article{
+        img{
+            width: 20rem;
+            height: 20rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        div{
+            width: 20rem;
+        }
+    }
+}
+
+
+.haztupedido__infoBox{
+padding: 3em 2em;
+}
+
+
+/* INGREDIENTES */
+
+.ingredientes__box{
+    display: grid;
+    grid-template-rows: 22em 22em 22em;
+    img{
+        width: 100%;
+        height: 22em;
+        }
+    }
+    
+}
