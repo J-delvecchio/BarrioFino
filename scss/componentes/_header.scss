@@ -15,17 +15,17 @@ header{
 
 .header__navButton{
     border-radius: 0.2em;
-    background-color: $blue;
+    background-color: $red;
     a{
         font-size: 1.1rem;
         color: beige;
         font-weight: 600;
+
     }
 
     a:hover{
-        font-size: 0.5rem;
+        font-size: 1.3rem;
         color: #F2E5D5;
-        transform: rotate(10deg);
         }
 } 
 

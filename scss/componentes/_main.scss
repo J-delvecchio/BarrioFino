@@ -41,17 +41,30 @@ div.menu__box{
         justify-content: center;
         border-top: black 2px solid;
         padding: 2em;
+
+        div{
+            padding: 0.7em;
+        }
+
+        img{
+            border: $red 5px double;
+            border-radius: 0.2em;
+        }
+
         h3{
             padding: 0.2em;
             color: $blue;
-            font-weight: 600;
+            font-weight: 800;
             font-size: 1.8rem;
             text-decoration: underline $blue;
+            text-align: center;
             }
         p{
                 padding:0.2em;
-                font-weight: 400;
-                padding-top: 1em;
+                font-weight: 600;
+                padding-top: 0.8em;
+                text-align: center;
+                text-transform: uppercase;
                 }
         }
         
@@ -66,6 +79,11 @@ div.menu__box{
     justify-content: center;
     padding: 2em;
     border-top: black solid 0.1rem;
+    article{
+        img{
+            border: $blue 1em ridge;
+        }
+    }
     h2{
         color: $cream;
         background-color: $red;
