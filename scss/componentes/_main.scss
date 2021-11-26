@@ -224,9 +224,18 @@ div.menu__box{
 /* INGREDIENTES */
 
 div.ingredientes__box{
-    display: grid;
-    grid-template-rows: 15em 15em 15em;
     div{
+        display: flex;
+        justify-content: end;
+
+        p{
+            position: absolute;
+            align-self: flex-end;
+            padding: 0.4em;
+            color:beige;
+            font-size: 2rem;
+            font-weight: 200;
+        }
         img{
             width: 100%;
             height: 15em;
@@ -304,14 +313,22 @@ div.ingredientes__box{
     
     /* INGREDIENTES */
 
-    div.ingredientes__box{
-        display: grid;
-        grid-template-rows: 15em 15em 15em;
-        div{
-            img{
-                width: 100%;
-                height: 15em;
-            }
+div.ingredientes__box{
+    div{
+        display: flex;
+        justify-content: end;
+        p{
+            position: absolute;
+            align-self: flex-end;
+            padding: 0.4em;
+            color:beige;
+            font-size: 3rem;
+            font-weight: 200;
+        }
+        img{
+            width: 100%;
+            height: 15em;
+        }
         }
     }
 
@@ -378,13 +395,23 @@ padding: 3em 2em;
 
 /* INGREDIENTES */
 
-.ingredientes__box{
-    display: grid;
-    grid-template-rows: 22em 22em 22em;
-    img{
-        width: 100%;
-        height: 22em;
+div.ingredientes__box{
+    div{
+        display: flex;
+        justify-content: end;
+
+        p{
+            position: absolute;
+            align-self: flex-end;
+            padding: 0.4em;
+            color:beige;
+            font-size: 4rem;
+            font-weight: 200;
+        }
+        img{
+            width: 100%;
+            height: 22em;
+            }
         }
     }
-    
 }
