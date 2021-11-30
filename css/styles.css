@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap");
 /*Generales*/
+/*BODY*/
+.body {
+  font-family: 'Montserrat',sans-serif;
+  background-color: #F2E5D5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -211,16 +217,26 @@ header a:hover {
   }
 }
 
-main {
-  background-color: #F2E5D5;
-}
-
-/*BODY*/
-body {
-  font-family: 'Montserrat',sans-serif;
-}
-
 /* HOME */
+.home__nosotros {
+  background-color: #D92E1E;
+  margin: 3em auto;
+  padding: 1.5rem;
+  border: 0.2em solid black;
+}
+
+.home__nosotros h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #F2E5D5;
+}
+
+.home__nosotros p {
+  font-weight: 200;
+  text-align: center;
+  color: #F2E5D5;
+}
+
 .home__imagenes img {
   height: 25rem;
 }
@@ -387,6 +403,15 @@ div.menu__box article p {
 }
 
 @media screen and (max-width: 480px) {
+  .home__nosotros {
+    width: auto;
+  }
+  .home__nosotros h3 {
+    font-size: 1rem;
+  }
+  .home__nosotros p {
+    font-size: 0.6rem;
+  }
   /* MENU */
   .menu__box article {
     -ms-grid-columns: 0.2fr 1fr 0.2fr;
@@ -431,36 +456,31 @@ div.menu__box article p {
   }
   .haztupedido__box article div h3 {
     font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
   }
   .haztupedido__box article div p {
+    text-align: center;
     font-size: 0.9rem;
     margin-bottom: 0.1rem;
   }
-  /* INGREDIENTES */
-  div.ingredientes__box div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  div.ingredientes__box div p {
-    position: absolute;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    padding: 0.4em;
-    color: beige;
-    font-size: 2rem;
-    font-weight: 200;
-  }
-  div.ingredientes__box div img {
+  /* FRIZADAS */
+  section.frizadas__box img {
     width: 100%;
-    height: 15em;
+    height: 15rem;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1199px) {
+  .home__nosotros {
+    width: 30em;
+  }
+  .home__nosotros h3 {
+    font-size: 2rem;
+  }
+  .home__nosotros p {
+    font-size: 0.9rem;
+  }
   /* MENU */
   .menu__box article {
     -ms-grid-columns: 0.2fr 1fr 0.2fr;
@@ -485,55 +505,54 @@ div.menu__box article p {
     text-align: center;
   }
   /*HAZTUPEDIDO*/
+  .haztupedido__mainImgBox img {
+    width: 100%;
+    height: auto;
+  }
   .haztupedido__box {
-    -ms-grid-columns: 0.2fr 1fr 1fr 0.2fr;
-        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
-        grid-template-areas: ". resumen resumen ." ". pizza1 pizza2 ." ". pizza3 pizza4 .";
+    -ms-grid-columns: 0.2fr 1fr 0.2fr;
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+        grid-template-areas: ". resumen ." ". pizza1 ." ". pizza2 ." ". pizza3 ." ". pizza4 .";
   }
   .haztupedido__box article img {
-    width: 18rem;
-    height: 18rem;
-    margin: 1rem;
+    width: 28rem;
+    height: 28rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
   .haztupedido__box article div {
-    width: 18rem;
-    margin: 1rem;
+    width: 28rem;
   }
   .haztupedido__box article div h3 {
-    font-size: 1.6rem;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 600;
   }
   .haztupedido__box article div p {
-    font-size: 1rem;
-    margin-bottom: 0.1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1em;
   }
-  /* INGREDIENTES */
-  div.ingredientes__box div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  div.ingredientes__box div p {
-    position: absolute;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    padding: 0.4em;
-    color: beige;
-    font-size: 3rem;
-    font-weight: 200;
-  }
-  div.ingredientes__box div img {
+  /*  FRIZADAS */
+  section.frizadas__box img {
     width: 100%;
-    height: 15em;
+    height: 25rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /* HOME */
+  .home__nosotros {
+    width: 40em;
+  }
+  .home__nosotros h3 {
+    font-size: 3rem;
+  }
+  .home__nosotros p {
+    font-size: 1.1rem;
+  }
   .home__imagenes img {
-    height: 35rem;
+    height: 40rem;
   }
   /* MENU */
   div.menu__box article {
@@ -569,27 +588,10 @@ div.menu__box article p {
   .haztupedido__infoBox {
     padding: 3em 2em;
   }
-  /* INGREDIENTES */
-  div.ingredientes__box div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  div.ingredientes__box div p {
-    position: absolute;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    padding: 0.4em;
-    color: beige;
-    font-size: 4rem;
-    font-weight: 200;
-  }
-  div.ingredientes__box div img {
+  /* FRIZADAS */
+  section.frizadas__box img {
     width: 100%;
-    height: 22em;
+    height: 40rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,13 @@
 /*Generales*/
 @import "../base/variables";
 
+/*BODY*/
+
+.body{
+    font-family: 'Montserrat',sans-serif;
+    background-color: $cream;
+}
+
 *{
     margin: 0;
     padding: 0;
