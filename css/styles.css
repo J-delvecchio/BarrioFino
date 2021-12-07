@@ -364,6 +364,15 @@ div.menu__box article p {
   height: 35rem;
 }
 
+.frizadas__texto {
+  width: 100%;
+  background: radial-gradient(#D92E1E, #F2E5D5);
+  color: #F2E5D5;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 /*CONTACTO*/
 .contacto__mainBox {
   display: -ms-grid;
