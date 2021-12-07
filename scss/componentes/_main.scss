@@ -121,7 +121,11 @@ div.menu__box{
 
 .frizadas__texto{
     width: 100%;
-    background-color: red;
+    background:radial-gradient($red,$cream);
+    color:$cream;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 /*CONTACTO*/
